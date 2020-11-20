@@ -62,6 +62,9 @@ app.post('/event', (req, res) => {
     const ev = { 
         title: req.body.title, 
         description: req.body.description,
+        date: req.body.date,
+        location: req.body.location,
+        hogwartshouse: req.body.hogwartshouse,
         id : mockEvents.events.length + 1
      }
 // this will create the Events collection if it does not exist
